@@ -1,6 +1,5 @@
-import { createClient, Client } from "@libsql/client";
-import path from "path";
-import fs from "fs";
+// /web uses HTTP — no native bindings, works on any platform including Heroku
+import { createClient, Client } from "@libsql/client/web";
 
 const DIFF_RANK: Record<string, number> = { easy: 1, medium: 2, hard: 3 };
 export function diffRank(d: string): number {
@@ -11,19 +10,10 @@ let _client: Client | null = null;
 let _initPromise: Promise<void> | null = null;
 
 function makeClient(): Client {
-  const remoteUrl = process.env.TURSO_DATABASE_URL;
-
-  if (remoteUrl) {
-    return createClient({
-      url: remoteUrl,
-      authToken: process.env.TURSO_AUTH_TOKEN,
-    });
-  }
-
-  // Local dev fallback — plain SQLite file
-  const dataDir = path.join(process.cwd(), "data");
-  if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
-  return createClient({ url: `file:${path.join(dataDir, "scores.db")}` });
+  const url = process.env.TURSO_DATABASE_URL;
+  const authToken = process.env.TURSO_AUTH_TOKEN;
+  if (!url) throw new Error("TURSO_DATABASE_URL is not set");
+  return createClient({ url, authToken });
 }
 
 async function initSchema(client: Client): Promise<void> {
@@ -72,15 +62,13 @@ export async function getDb(): Promise<Client> {
   if (!_client) _client = makeClient();
   if (!_initPromise) {
     _initPromise = initSchema(_client).catch((err) => {
-      _initPromise = null; // allow retry on transient errors
+      _initPromise = null;
       throw err;
     });
   }
   await _initPromise;
   return _client;
 }
-
-// ── Row types ────────────────────────────────────────────────────────────────
 
 export interface UserRow {
   id: number;

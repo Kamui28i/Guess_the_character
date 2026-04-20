@@ -46,3 +46,5 @@ next-env.d.ts
 # pydev debugger files (VS Code ms-python extension internals)
 pydev_*.py
 __init__.py
+.env.local
+.env*.local
