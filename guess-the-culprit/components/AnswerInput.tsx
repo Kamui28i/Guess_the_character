@@ -27,7 +27,10 @@ export default function AnswerInput({ answerSlug, onSubmit, disabled }: Props) {
         onChange={(e) => setValue(e.target.value)}
         disabled={disabled}
         placeholder="Or type the suspect's name…"
-        className="flex-1 bg-[#0a1429] border border-[#1e3a5f] text-[#d4c090] placeholder-[#3a4a5a] px-4 py-2.5 rounded-lg font-mono text-sm focus:outline-none focus:border-[#d4a017] transition-colors"
+        className="flex-1 text-[#d4c090] placeholder-[#3a4a5a] px-4 py-2.5 rounded-lg font-mono text-sm focus:outline-none transition-colors"
+        style={{ background: "var(--theme-card, #0a1429)", border: "1px solid var(--theme-border, #1e3a5f)" }}
+        onFocus={(e) => (e.currentTarget.style.borderColor = "var(--theme-accent, #d4a017)")}
+        onBlur={(e) => (e.currentTarget.style.borderColor = "var(--theme-border, #1e3a5f)")}
         autoComplete="off"
         spellCheck={false}
       />
@@ -35,7 +38,7 @@ export default function AnswerInput({ answerSlug, onSubmit, disabled }: Props) {
         type="submit"
         disabled={disabled || !value.trim()}
         className="px-5 py-2.5 font-bold rounded-lg text-sm disabled:opacity-40 transition-all hover:brightness-110 active:scale-95"
-        style={{ background: "linear-gradient(135deg, #d4a017, #c8940f)", color: "#0a1429" }}
+        style={{ background: "linear-gradient(135deg, var(--theme-accent, #d4a017), var(--theme-accent, #c8940f))", color: "var(--theme-card, #0a1429)" }}
       >
         ↵
       </button>

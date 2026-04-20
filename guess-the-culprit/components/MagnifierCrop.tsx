@@ -49,10 +49,10 @@ export default function MagnifierCrop({ hints, bodyPartHint, characterName, char
   const pos = spotlightPosition(bodyPartHint);
 
   return (
-    <div className="flex flex-col items-center gap-3">
+    <div className="flex flex-col items-center gap-1.5">
       <div
         className="relative overflow-hidden rounded bg-[#111827] border-2 border-[#1e3a5f] shadow-lg"
-        style={{ width: size, height: size * 1.4 }}
+        style={{ width: size, height: size * 1.4, maxHeight: "min(336px, 36vh)", maxWidth: "min(100%, calc(100vw - 80px))" }}
       >
         {status === "ready" && imageUrl ? (
           <>

@@ -58,9 +58,9 @@ export default function Timer({ running, onTimeout, onTick, resetKey, duration =
     <div className="relative flex items-center justify-center w-[80px] h-[80px] sm:w-[100px] sm:h-[100px]">
       <svg width="100%" height="100%" viewBox="0 0 100 100">
         {/* Magnifier handle */}
-        <line x1="72" y1="72" x2="90" y2="92" stroke="#d4a017" strokeWidth="6" strokeLinecap="round" />
+        <line x1="72" y1="72" x2="90" y2="92" stroke="var(--theme-accent, #d4a017)" strokeWidth="6" strokeLinecap="round" />
         {/* Background ring */}
-        <circle cx="50" cy="50" r={r} fill="#0a1429" stroke="#1e3a5f" strokeWidth="6" />
+        <circle cx="50" cy="50" r={r} fill="var(--theme-card, #0a1429)" stroke="var(--theme-border, #1e3a5f)" strokeWidth="6" />
         {/* Progress ring */}
         <circle
           cx="50"

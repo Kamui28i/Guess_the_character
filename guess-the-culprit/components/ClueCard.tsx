@@ -175,8 +175,8 @@ function BodyPartClue({
   }, [revealed, character.slug, character.displayName, character.series]);
 
   return (
-    <div className="flex flex-col items-center gap-2">
-      <p className="text-xs uppercase tracking-widest text-[#8a7a6a]">
+    <div className="flex flex-col items-center gap-1.5">
+      <p className="text-[11px] uppercase tracking-widest text-[#8a7a6a]">
         {revealed ? "Suspect Identified" : "Evidence Photo (Magnified)"}
       </p>
 
@@ -210,10 +210,10 @@ function BodyPartClue({
                 <img
                   src={imageUrl}
                   alt={character.displayName}
-                  style={{ width: 200, height: 280, objectFit: "cover", objectPosition: "top", display: "block" }}
+                  style={{ width: 200, height: 280, maxHeight: "min(280px, 36vh)", objectFit: "cover", objectPosition: "top", display: "block" }}
                 />
               ) : (
-                <div style={{ width: 200, height: 280 }} className="flex items-center justify-center bg-[#111827]">
+                <div style={{ width: 200, height: 280, maxHeight: "min(280px, 36vh)" }} className="flex items-center justify-center bg-[#111827]">
                   <div className="w-8 h-8 border-4 border-[#d4a017] border-t-transparent rounded-full animate-spin" />
                 </div>
               )}

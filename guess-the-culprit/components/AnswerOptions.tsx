@@ -35,13 +35,15 @@ export default function AnswerOptions({ choices, onSelect, disabled, correctSlug
                 : isWrong
                 ? { borderColor: "#ef4444", background: "rgba(239,68,68,0.1)", boxShadow: "0 0 16px rgba(239,68,68,0.2)" }
                 : isNeutral
-                ? { borderColor: "#1e3a5f", background: "rgba(10,26,46,0.5)", opacity: 0.45 }
-                : { borderColor: "#1e3a5f", background: "rgba(10,26,46,0.8)" }
+                ? { borderColor: "var(--theme-border, #1e3a5f)", background: "color-mix(in srgb, var(--theme-card, #0a1a2e) 50%, transparent)", opacity: 0.45 }
+                : { borderColor: "var(--theme-border, #1e3a5f)", background: "color-mix(in srgb, var(--theme-card, #0a1a2e) 80%, transparent)" }
             }
           >
             {/* Hover shimmer for active buttons */}
             {!disabled && (
-              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-[#d4a017]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                style={{ backgroundImage: "linear-gradient(to right, transparent, color-mix(in srgb, var(--theme-accent, #d4a017) 5%, transparent), transparent)" }}
+              />
             )}
 
             <div className="flex items-start gap-2.5">
@@ -51,7 +53,7 @@ export default function AnswerOptions({ choices, onSelect, disabled, correctSlug
                 style={
                   isCorrect ? { background: "#4ade8033", color: "#4ade80" } :
                   isWrong   ? { background: "#ef444433", color: "#ef4444" } :
-                              { background: "#1e3a5f66", color: "#8a9ab0" }
+                              { background: "color-mix(in srgb, var(--theme-border, #1e3a5f) 40%, transparent)", color: "#8a9ab0" }
                 }
               >
                 {String.fromCharCode(65 + i)}

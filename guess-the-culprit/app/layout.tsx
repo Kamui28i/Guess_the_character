@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SplashScreen from "@/components/SplashScreen";
 import UserRegistration from "@/components/UserRegistration";
+import BackgroundApplier from "@/components/BackgroundApplier";
 
 export const metadata: Metadata = {
   title: "Guess the Culprit",
@@ -22,6 +23,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-[#0a1429] text-[#f5eed5]">
+        <BackgroundApplier />
         <SplashScreen />
         <UserRegistration />
         {children}

@@ -42,11 +42,17 @@ export default function GamePage() {
     [submitAnswer]
   );
 
-  // Advance to next clue in details mode and reset timer
+  // Advance to next clue in details mode and reset timer (called on wrong/timeout)
   const advanceDetail = useCallback(() => {
     revealNextDetail();
     setWrongFlash(true);
     setTimeout(() => setWrongFlash(false), 700);
+    setResetKey((k) => k + 1);
+  }, [revealNextDetail]);
+
+  // Manual "Next Clue" button — resets timer without wrong flash
+  const nextClueManual = useCallback(() => {
+    revealNextDetail();
     setResetKey((k) => k + 1);
   }, [revealNextDetail]);
 
@@ -113,7 +119,7 @@ export default function GamePage() {
   if (!game) return null;
 
   const round = game.rounds[game.currentRound];
-  // Use per-round clueMode so mixed mode picks the right timer
+  // Each round uses its own clueMode's timer rules (mixed mode inherits per-round mode)
   const timerSeconds =
     TIMER_SECONDS_BY_MODE_DIFFICULTY[round.clueMode]?.[game.difficulty] ??
     TIMER_SECONDS_BY_DIFFICULTY[game.difficulty];
@@ -124,9 +130,9 @@ export default function GamePage() {
   const isDetailsMode = round.clueMode === "details";
 
   return (
-    <main className="min-h-screen flex flex-col items-center px-4 py-8">
+    <main className="min-h-screen flex flex-col items-center px-4 py-4 sm:py-8">
       {/* Top bar */}
-      <div className="w-full max-w-xl flex items-center justify-between mb-6">
+      <div className="w-full max-w-xl flex items-center justify-between mb-3 sm:mb-6">
         <ScoreDisplay
           score={game.score}
           streak={game.streak}
@@ -196,7 +202,7 @@ export default function GamePage() {
                   <div>
                     <p
                       className="font-bold text-base leading-tight"
-                      style={{ fontFamily: "'Playfair Display', serif", color: "#d4a017" }}
+                      style={{ fontFamily: "'Playfair Display', serif", color: "var(--theme-accent, #d4a017)" }}
                     >
                       {character.displayName}
                     </p>
@@ -221,7 +227,7 @@ export default function GamePage() {
                 <ul className="space-y-1">
                   {character.funFacts.map((f, i) => (
                     <li key={i} className="text-[#c8b89a] text-xs flex gap-2">
-                      <span className="text-[#d4a017]/50 flex-shrink-0">◆</span>
+                      <span className="flex-shrink-0" style={{ color: "color-mix(in srgb, var(--theme-accent, #d4a017) 50%, transparent)" }}>◆</span>
                       {f}
                     </li>
                   ))}
@@ -262,10 +268,10 @@ export default function GamePage() {
                     {/* Details mode: Next Detail button */}
                     {isDetailsMode ? (
                       <button
-                        onClick={revealNextDetail}
+                        onClick={nextClueManual}
                         disabled={detailsRevealed >= MAX_DETAILS}
-                        className="flex-1 py-2.5 text-xs border rounded-lg disabled:opacity-30 hover:bg-[#1a2e4a] transition-all font-mono tracking-wider uppercase active:scale-[0.97] flex items-center justify-center gap-2"
-                        style={{ borderColor: "#d4a01766", color: "#d4a017" }}
+                        className="flex-1 py-2.5 text-xs border rounded-lg disabled:opacity-30 transition-all font-mono tracking-wider uppercase active:scale-[0.97] flex items-center justify-center gap-2"
+                        style={{ borderColor: "color-mix(in srgb, var(--theme-accent, #d4a017) 40%, transparent)", color: "var(--theme-accent, #d4a017)" }}
                       >
                         {detailsRevealed >= MAX_DETAILS ? (
                           "All clues revealed"
@@ -283,8 +289,8 @@ export default function GamePage() {
                       <button
                         onClick={handleHint}
                         disabled={hintUsed || descIdx >= 2}
-                        className="flex-1 py-2.5 text-xs border rounded-lg disabled:opacity-30 hover:bg-[#1a2e4a] transition-all font-mono tracking-wider uppercase active:scale-[0.97]"
-                        style={{ borderColor: "#d4a01766", color: "#d4a017" }}
+                        className="flex-1 py-2.5 text-xs border rounded-lg disabled:opacity-30 transition-all font-mono tracking-wider uppercase active:scale-[0.97]"
+                        style={{ borderColor: "color-mix(in srgb, var(--theme-accent, #d4a017) 40%, transparent)", color: "var(--theme-accent, #d4a017)" }}
                       >
                         💡 Hint <span className="opacity-60">(−20%)</span>
                       </button>
@@ -292,7 +298,8 @@ export default function GamePage() {
 
                     <button
                       onClick={handleSkip}
-                      className="flex-1 py-2.5 text-xs border border-[#1e3a5f] text-[#4a5a6a] rounded-lg hover:bg-[#0d1f38] hover:text-[#8a9ab0] transition-all font-mono tracking-wider uppercase active:scale-[0.97]"
+                      className="flex-1 py-2.5 text-xs text-[#4a5a6a] rounded-lg hover:text-[#8a9ab0] transition-all font-mono tracking-wider uppercase active:scale-[0.97]"
+                      style={{ border: "1px solid var(--theme-border, #1e3a5f)" }}
                     >
                       ⏭ Skip
                     </button>
@@ -313,10 +320,10 @@ export default function GamePage() {
                     onClick={handleNext}
                     className="w-full py-3 rounded-xl font-black tracking-[0.12em] uppercase transition-all active:scale-[0.97] hover:brightness-110 relative overflow-hidden group"
                     style={{
-                      background: "linear-gradient(135deg, #d4a017 0%, #e8c040 50%, #d4a017 100%)",
-                      color: "#0a1429",
+                      background: "linear-gradient(135deg, var(--theme-accent, #d4a017) 0%, var(--theme-accent-light, #e8c040) 50%, var(--theme-accent, #d4a017) 100%)",
+                      color: "var(--theme-card, #0a1429)",
                       fontFamily: "'Playfair Display', serif",
-                      boxShadow: "0 4px 20px rgba(212,160,23,0.3)",
+                      boxShadow: "0 4px 20px color-mix(in srgb, var(--theme-accent, #d4a017) 30%, transparent)",
                     }}
                   >
                     <span className="relative z-10">

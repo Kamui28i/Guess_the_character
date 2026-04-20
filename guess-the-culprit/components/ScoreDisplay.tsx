@@ -10,10 +10,10 @@ interface Props {
 export default function ScoreDisplay({ score, streak, round, total }: Props) {
   return (
     <div className="flex items-center gap-1 font-mono">
-      <StatPill label="Score" value={score} color="#d4a017" />
-      <div className="w-px h-8 bg-[#1e3a5f] mx-1" />
+      <StatPill label="Score" value={score} color="var(--theme-accent, #d4a017)" />
+      <div className="w-px h-8 mx-1" style={{ background: "var(--theme-border, #1e3a5f)" }} />
       <StatPill label="Streak" value={streak > 0 ? `🔥 ${streak}` : streak} color="#4ade80" />
-      <div className="w-px h-8 bg-[#1e3a5f] mx-1" />
+      <div className="w-px h-8 mx-1" style={{ background: "var(--theme-border, #1e3a5f)" }} />
       <StatPill label="Case" value={`${round}/${total}`} color="#8a9ab0" />
     </div>
   );

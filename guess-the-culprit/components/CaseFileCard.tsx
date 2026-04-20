@@ -15,14 +15,15 @@ export default function CaseFileCard({ caseNumber, children, className = "" }: P
       animate={{ x: 0, opacity: 1, rotateY: 0 }}
       exit={{ x: 80, opacity: 0, rotateY: 8 }}
       transition={{ type: "spring", stiffness: 240, damping: 24 }}
-      className={`relative rounded-sm shadow-2xl border border-[#b8a880] overflow-hidden paper-texture ${className}`}
+      className={`relative rounded-sm shadow-2xl overflow-hidden paper-texture ${className}`}
       style={{
         fontFamily: "'Courier Prime', 'Special Elite', monospace",
+        border: "1px solid var(--theme-border, #b8a880)",
         boxShadow: "0 8px 40px rgba(0,0,0,0.6), 0 2px 0 rgba(255,255,255,0.04) inset, 4px 4px 0 rgba(0,0,0,0.3)",
       }}
     >
       {/* Top binding tape strip */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-[#d4a017]/60" />
+      <div className="absolute top-0 left-0 right-0 h-1" style={{ background: "var(--theme-accent, #d4a017)", opacity: 0.6 }} />
 
       {/* Paperclip */}
       <div className="absolute top-0 left-10 w-4 h-9 rounded-b-full border-[3px] border-[#8a7850] bg-transparent -mt-0.5 z-10"
@@ -30,14 +31,16 @@ export default function CaseFileCard({ caseNumber, children, className = "" }: P
       />
 
       {/* Header bar */}
-      <div className="bg-[#0a1429] text-[#d4a017] px-4 sm:px-6 pt-5 sm:pt-6 pb-3 flex justify-between items-center border-b-2 border-[#d4a017]/20">
+      <div className="px-4 sm:px-6 pt-5 sm:pt-6 pb-3 flex justify-between items-center border-b-2"
+        style={{ background: "var(--theme-card, #0a1429)", color: "var(--theme-accent, #d4a017)", borderColor: "color-mix(in srgb, var(--theme-accent, #d4a017) 20%, transparent)" }}
+      >
         <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#d4a017]/60 animate-pulse" />
+          <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--theme-accent, #d4a017)", opacity: 0.6 }} />
           <span className="text-[10px] uppercase tracking-[0.25em] opacity-60 font-mono">Classified Case File</span>
         </div>
         <span
-          className="text-sm font-bold tracking-wider px-2 py-0.5 rounded border border-[#d4a017]/30 bg-[#d4a017]/8"
-          style={{ fontFamily: "'Playfair Display', serif" }}
+          className="text-sm font-bold tracking-wider px-2 py-0.5 rounded"
+          style={{ fontFamily: "'Playfair Display', serif", border: "1px solid color-mix(in srgb, var(--theme-accent, #d4a017) 30%, transparent)", background: "color-mix(in srgb, var(--theme-accent, #d4a017) 8%, transparent)" }}
         >
           CASE #{String(caseNumber).padStart(3, "0")}
         </span>
@@ -63,7 +66,7 @@ export default function CaseFileCard({ caseNumber, children, className = "" }: P
       />
 
       {/* Content */}
-      <div className="px-4 sm:px-6 py-4 sm:py-5">{children}</div>
+      <div className="px-4 sm:px-6 py-3 sm:py-5">{children}</div>
     </motion.div>
   );
 }

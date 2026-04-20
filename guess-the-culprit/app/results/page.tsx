@@ -72,7 +72,7 @@ export default function ResultsPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1 }}
             className="text-4xl font-black text-glow-gold mb-1"
-            style={{ fontFamily: "'Playfair Display', serif", color: "#d4a017" }}
+            style={{ fontFamily: "'Playfair Display', serif", color: "var(--theme-accent, #d4a017)" }}
           >
             Investigation Complete
           </motion.h1>
@@ -81,7 +81,7 @@ export default function ResultsPage() {
           </p>
           {username && (
             <p className="text-[#4a6a8a] text-[11px] font-mono mt-1">
-              Detective: <span className="text-[#d4a017]">{username}</span>
+              Detective: <span style={{ color: "var(--theme-accent, #d4a017)" }}>{username}</span>
             </p>
           )}
         </div>
@@ -92,12 +92,14 @@ export default function ResultsPage() {
           style={{ boxShadow: "0 8px 40px rgba(0,0,0,0.5), 4px 4px 0 rgba(0,0,0,0.25)" }}
         >
           {/* Binding strip */}
-          <div className="h-1 bg-[#d4a017]/60" />
+          <div className="h-1" style={{ background: "var(--theme-accent, #d4a017)", opacity: 0.6 }} />
 
           {/* Paper header */}
-          <div className="bg-[#0a1429] px-6 py-3 flex justify-between items-center border-b border-[#d4a017]/20">
-            <span className="text-[10px] text-[#d4a017]/60 uppercase tracking-[0.25em] font-mono">Official Report</span>
-            <span className="text-[10px] text-[#d4a017]/40 font-mono">CASE CLOSED</span>
+          <div className="px-6 py-3 flex justify-between items-center"
+            style={{ background: "var(--theme-card, #0a1429)", borderBottom: "1px solid color-mix(in srgb, var(--theme-accent, #d4a017) 20%, transparent)" }}
+          >
+            <span className="text-[10px] uppercase tracking-[0.25em] font-mono" style={{ color: "color-mix(in srgb, var(--theme-accent, #d4a017) 60%, transparent)" }}>Official Report</span>
+            <span className="text-[10px] font-mono" style={{ color: "color-mix(in srgb, var(--theme-accent, #d4a017) 40%, transparent)" }}>CASE CLOSED</span>
           </div>
 
           <div className="relative p-5 sm:p-8 font-mono text-[#1a0a00]">
@@ -190,10 +192,10 @@ export default function ResultsPage() {
               saveState === "saved"
                 ? { color: "#4ade80", borderColor: "#4ade8030", background: "#4ade8008" }
                 : saveState === "saving"
-                ? { color: "#8a9ab0", borderColor: "#1e3a5f", background: "#0d1f38" }
+                ? { color: "#8a9ab0", borderColor: "var(--theme-border, #1e3a5f)", background: "var(--theme-card, #0d1f38)" }
                 : saveState === "error"
                 ? { color: "#c41e3a", borderColor: "#c41e3a30", background: "#c41e3a08" }
-                : { color: "#4a5a6a", borderColor: "#1e3a5f", background: "#0d1f38" }
+                : { color: "#4a5a6a", borderColor: "var(--theme-border, #1e3a5f)", background: "var(--theme-card, #0d1f38)" }
             }
           >
             {saveState === "saving" && "Saving score to registry…"}
@@ -205,7 +207,8 @@ export default function ResultsPage() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="text-center text-[#4a5a6a] text-xs font-mono mb-5 py-3 rounded-xl border border-dashed border-[#1e3a5f]"
+            className="text-center text-[#4a5a6a] text-xs font-mono mb-5 py-3 rounded-xl border border-dashed"
+          style={{ borderColor: "var(--theme-border, #1e3a5f)" }}
           >
             Register a detective alias to save your scores
           </motion.div>
@@ -216,10 +219,10 @@ export default function ResultsPage() {
           onClick={handleNew}
           className="w-full py-4 rounded-xl font-black text-lg tracking-[0.15em] uppercase transition-all active:scale-[0.97] hover:brightness-110 mb-10 relative overflow-hidden group"
           style={{
-            background: "linear-gradient(135deg, #d4a017 0%, #e8c040 50%, #d4a017 100%)",
-            color: "#0a1429",
+            background: "linear-gradient(135deg, var(--theme-accent, #d4a017) 0%, var(--theme-accent-light, #e8c040) 50%, var(--theme-accent, #d4a017) 100%)",
+            color: "var(--theme-card, #0a1429)",
             fontFamily: "'Playfair Display', serif",
-            boxShadow: "0 4px 24px rgba(212,160,23,0.3)",
+            boxShadow: "0 4px 24px color-mix(in srgb, var(--theme-accent, #d4a017) 30%, transparent)",
           }}
         >
           <span className="relative z-10">Start New Investigation</span>
@@ -228,11 +231,11 @@ export default function ResultsPage() {
 
         {/* ── Leaderboard ── */}
         <div className="flex items-center gap-3 mb-5">
-          <div className="flex-1 h-px bg-[#1e3a5f]" />
-          <h2 className="text-[11px] font-bold text-[#d4a017]/60 tracking-[0.2em] uppercase font-mono">
+          <div className="flex-1 h-px" style={{ background: "var(--theme-border, #1e3a5f)" }} />
+          <h2 className="text-[11px] font-bold tracking-[0.2em] uppercase font-mono" style={{ color: "color-mix(in srgb, var(--theme-accent, #d4a017) 60%, transparent)" }}>
             Closed Cases Registry
           </h2>
-          <div className="flex-1 h-px bg-[#1e3a5f]" />
+          <div className="flex-1 h-px" style={{ background: "var(--theme-border, #1e3a5f)" }} />
         </div>
         <Leaderboard />
       </motion.div>

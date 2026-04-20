@@ -157,7 +157,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Roronoa Zoro",
     series: "One Piece",
     aliases: ["Zoro", "Roronoa Zoro", "Pirate Hunter", "Zolo"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A three-sword-style swordsman with green hair and a chronic inability to read maps.",
       "Wears a green haramaki sash, has a vertical scar over his left eye in the later arcs.",
@@ -173,7 +173,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Kakashi Hatake",
     series: "Naruto",
     aliases: ["Kakashi", "Copy Ninja", "Hatake Kakashi", "Sixth Hokage"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A laid-back jonin mentor with a mask covering the lower half of his face and one red eye stolen from a dying friend.",
       "Silver spiky hair tilted sideways, reads adult novels in public without shame, always late.",
@@ -189,7 +189,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Levi Ackerman",
     series: "Attack on Titan",
     aliases: ["Levi", "Captain Levi", "Heichou"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "Humanity's strongest soldier — short, stone-faced, obsessed with cleanliness, deadly with grappling gear.",
       "Black undercut hair, cravat, always sipping tea holding the cup from the rim.",
@@ -205,7 +205,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Edward Elric",
     series: "Fullmetal Alchemist",
     aliases: ["Ed", "Edward Elric", "Fullmetal", "Fullmetal Alchemist"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A teenage alchemist with a metal right arm and left leg, paying for a forbidden ritual he attempted as a child.",
       "Blond hair in a long braid, red coat with a serpent-cross emblem on the back, extremely short and touchy about it.",
@@ -221,7 +221,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Vegeta",
     series: "Dragon Ball",
     aliases: ["Vegeta", "Prince Vegeta", "Prince of Saiyans"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A proud warrior prince who started out genocidal and mellowed into a reluctant family man over decades.",
       "Flame-shaped upward hair, permanent scowl, blue jumpsuit and white gloves, shouts 'over 9000' in memes.",
@@ -237,7 +237,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Sasuke Uchiha",
     series: "Naruto",
     aliases: ["Sasuke", "Uchiha Sasuke"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A brooding prodigy from a massacred clan; defects from his village to chase revenge, returns years later.",
       "Chicken-butt-shaped black hair, red-and-black eyes when activated, wields lightning attacks.",
@@ -269,7 +269,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Tanjiro Kamado",
     series: "Demon Slayer",
     aliases: ["Tanjiro", "Kamado Tanjiro"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A kind-hearted boy who becomes a demon hunter after his family is slaughtered and his little sister turned.",
       "Checkered black-and-green haori, a scar on his forehead, hanafuda earrings, extremely sensitive nose.",
@@ -301,7 +301,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Izuku Midoriya",
     series: "My Hero Academia",
     aliases: ["Deku", "Izuku", "Midoriya", "Izuku Midoriya"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "Born powerless in a world where 80% of people have superpowers; inherits the #1 hero's power.",
       "Green curly hair, freckles, green-and-white hero costume, breaks his own bones when he goes all-out.",
@@ -317,7 +317,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Satoru Gojo",
     series: "Jujutsu Kaisen",
     aliases: ["Gojo", "Gojo Satoru", "Satoru Gojo"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "The strongest sorcerer alive; teacher at a magic high school; vibes like he's already bored of being invincible.",
       "White messy hair, a black blindfold over bright blue eyes, tall and skinny in a dark uniform.",
@@ -367,7 +367,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Guts",
     series: "Berserk",
     aliases: ["Guts", "Black Swordsman", "Gatsu"],
-    tier: "hard",
+    tier: "medium",
     descriptions: [
       "A scarred mercenary who drags a sword the size of a slab of iron and hunts demons after the worst night of his life.",
       "Missing left eye, prosthetic left arm that hides a cannon, black armor with a brand that attracts evil spirits.",
@@ -383,7 +383,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Spike Spiegel",
     series: "Cowboy Bebop",
     aliases: ["Spike", "Spike Spiegel"],
-    tier: "hard",
+    tier: "medium",
     descriptions: [
       "A lazy, jazz-loving bounty hunter with a dark past; one real eye, one artificial, neither looking at the same thing.",
       "Green-tinted messy hair, dark-blue suit with yellow shirt, martial-arts style called Jeet Kune Do.",
@@ -399,7 +399,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Lelouch vi Britannia",
     series: "Code Geass",
     aliases: ["Lelouch", "Zero", "Lelouch Lamperouge"],
-    tier: "hard",
+    tier: "medium",
     descriptions: [
       "An exiled prince who gains the power to command absolute obedience with his eye; launches a revolution behind a mask.",
       "Black hair, purple eyes, wears a dramatic black-and-gold costume with a helmet when in his alter ego.",
@@ -415,7 +415,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Killua Zoldyck",
     series: "Hunter x Hunter",
     aliases: ["Killua", "Zoldyck", "Killua Zoldyck"],
-    tier: "hard",
+    tier: "medium",
     descriptions: [
       "A 12-year-old trained from birth as an assassin; best friend to the main protagonist; uses electricity.",
       "White spiky hair, blue eyes, lazy posture, carries a skateboard, extremely ticklish.",
@@ -431,7 +431,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Makima",
     series: "Chainsaw Man",
     aliases: ["Makima"],
-    tier: "hard",
+    tier: "medium",
     descriptions: [
       "A soft-spoken Public Safety higher-up with yellow ring-patterned eyes and horrifying motives.",
       "Red-orange hair in low braids, formal white shirt and tie, walks a small dog named Pochita's replacement.",
@@ -463,7 +463,7 @@ export const CHARACTERS: Character[] = [
     displayName: "All Might",
     series: "My Hero Academia",
     aliases: ["All Might", "Toshinori Yagami", "Symbol of Peace"],
-    tier: "hard",
+    tier: "easy",
     descriptions: [
       "The world's #1 hero whose true form is a gaunt, sickly man; picks a powerless boy as his successor.",
       "Buff form: enormous muscles, blond V-shaped hair-horns, blue eyes, perpetually smiling. Gaunt form: skeletal, coughs blood.",
@@ -497,7 +497,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Zenitsu Agatsuma",
     series: "Demon Slayer",
     aliases: ["Zenitsu", "Agatsuma Zenitsu"],
-    tier: "easy",
+    tier: "medium",
     descriptions: [
       "A cowardly demon slayer who only shows his true power when unconscious or pushed to the absolute limit.",
       "Bleached yellow hair, yellow and orange gradient haori, constantly crying and begging not to fight.",
@@ -529,7 +529,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Zero Two",
     series: "Darling in the FranXX",
     aliases: ["Zero Two", "02", "The Partner Killer"],
-    tier: "easy",
+    tier: "medium",
     descriptions: [
       "A mysterious half-human pilot with pink hair and small red horns who calls her partner 'darling'.",
       "Long pink hair, two small red oni horns, red officer uniform, signature lollipop.",
@@ -595,7 +595,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Tomura Shigaraki",
     series: "My Hero Academia",
     aliases: ["Shigaraki", "Tomura Shigaraki", "Tenko Shimura"],
-    tier: "medium",
+    tier: "hard",
     descriptions: [
       "A villain who disintegrates anything he touches with all five fingers; obsessed with destruction.",
       "Cracked pale skin, dry scraggly blue-grey hair, severed hands attached all over his body as trophies.",
@@ -627,7 +627,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Denji",
     series: "Chainsaw Man",
     aliases: ["Denji", "Chainsaw Man"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A dirt-poor teen who merges with a chainsaw devil and becomes a public safety devil hunter.",
       "Scruffy blonde hair, simple clothes, chainsaws erupting from his head and arms when transformed.",
@@ -659,7 +659,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Kirito",
     series: "Sword Art Online",
     aliases: ["Kirito", "Kazuto Kirigaya", "Black Swordsman", "Kirigaya Kazuto"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A gamer trapped in a VR death game who becomes its strongest solo player, the Black Swordsman.",
       "Black spiky hair, dual-wields black swords in his unique style, quiet but fiercely protective.",
@@ -675,7 +675,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Vash the Stampede",
     series: "Trigun",
     aliases: ["Vash", "Stampede", "The Humanoid Typhoon", "Errico"],
-    tier: "medium",
+    tier: "hard",
     descriptions: [
       "A wanted outlaw with a $$60 billion bounty who is actually a pacifist that refuses to kill anyone.",
       "Spiky blond hair, long red trench coat, prosthetic arm, giant revolver, hidden mechanical arm.",
@@ -691,7 +691,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Usagi Tsukino",
     series: "Sailor Moon",
     aliases: ["Usagi", "Sailor Moon", "Serena", "Bunny", "Neo-Queen Serenity"],
-    tier: "medium",
+    tier: "easy",
     descriptions: [
       "A clumsy crybaby middle-schooler who transforms into the champion of love and justice.",
       "Iconic twin buns with long blond pigtails, sailor-suit costume, magical tiara, crescent moon forehead mark.",
@@ -725,7 +725,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Griffith",
     series: "Berserk",
     aliases: ["Griffith", "Femto", "The Falcon of Light"],
-    tier: "hard",
+    tier: "medium",
     descriptions: [
       "A beautiful, charismatic mercenary captain who sacrifices his entire army to become a demon god.",
       "Long white flowing hair, angelic face, wearing white armor with a hawk motif; later a demon with black wings.",
@@ -741,7 +741,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Dio Brando",
     series: "JoJo's Bizarre Adventure",
     aliases: ["Dio", "DIO", "Dio Brando"],
-    tier: "hard",
+    tier: "medium",
     descriptions: [
       "A scheming orphan who steals a nobleman's body, becomes a vampire, then a time-stopping undead overlord.",
       "Bleached blond hair in a distinctive swept style, ornate golden outfit, heart-shaped hair pin, the word 'MUDA' repeated while punching.",
@@ -837,7 +837,7 @@ export const CHARACTERS: Character[] = [
     displayName: "Ryuk",
     series: "Death Note",
     aliases: ["Ryuk", "Ryuuk"],
-    tier: "hard",
+    tier: "easy",
     descriptions: [
       "A death god who dropped his notebook into the human world out of boredom; just here to watch the show.",
       "Huge black wings, grey-blue skin, enormous grin, wild black hair, loves apples obsessively.",
@@ -863,5 +863,535 @@ export const CHARACTERS: Character[] = [
     bodyPartHints: ["short blond hair", "dual short knives crossed on the back", "scar on the cheek"],
     funFacts: ["Based on real Norse explorer Thorfinn Karlsefni", "Series created by Makoto Yukimura"],
     wikiUrl: "https://vinlandsaga.fandom.com/wiki/Thorfinn"
-  }
+  },
+
+  // ========== TOKYO GHOUL ==========
+  {
+    slug: "ken-kaneki",
+    displayName: "Ken Kaneki",
+    series: "Tokyo Ghoul",
+    aliases: ["Kaneki", "Ken Kaneki", "Eyepatch", "The One-Eyed King", "Haise Sasaki"],
+    tier: "easy",
+    descriptions: [
+      "A bookish college student transformed into a half-ghoul after a date goes catastrophically wrong; torturous events bleach his hair white.",
+      "White hair, one black sclera with a red iris, centipede-like kagune tentacles erupting from his back.",
+      "The protagonist of a dark urban fantasy set among flesh-eating beings who hide in plain sight."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "white-hair", extras: ["black-red-eye","kagune-tentacles","finger-to-mouth"], palette: ["#f0f0f0","#1a1a1a","#c41e3a"] },
+    bodyPartHints: ["white hair (bleached from trauma)", "one eye with black sclera and red iris", "centipede kagune sprouting from the back"],
+    funFacts: ["His black fingernails are a ghoul trait", "Torture turned his hair white mid-series"],
+    wikiUrl: "https://tokyoghoul.fandom.com/wiki/Ken_Kaneki"
+  },
+  {
+    slug: "juuzou-suzuya",
+    displayName: "Juuzou Suzuya",
+    series: "Tokyo Ghoul",
+    aliases: ["Juuzou", "Suzuya", "Rei Suzuya"],
+    tier: "hard",
+    descriptions: [
+      "A childlike CCG investigator with an unnerving smile, no sense of pain, and stitches decorating his entire body.",
+      "White hair, red stitches sewn across his face and skin, carries a giant scythe-like weapon.",
+      "The unsettling white-haired ghoul investigator from the same dark urban fantasy series as the half-ghoul protagonist."
+    ],
+    sketchHints: { headShape: "adult-male-androgynous", accent: "white-hair-short", extras: ["red-stitches-face","scythe-weapon","childlike-face"], palette: ["#f0f0f0","#c41e3a","#1a1a1a"] },
+    bodyPartHints: ["red stitching sewn across the face and neck", "white hair", "childlike grin with unsettling eyes"],
+    funFacts: ["Feels no pain due to childhood surgery", "Weapon: Scorpion 1/56 quinques"],
+    wikiUrl: "https://tokyoghoul.fandom.com/wiki/Juuzou_Suzuya"
+  },
+  {
+    slug: "shuu-tsukiyama",
+    displayName: "Shuu Tsukiyama",
+    series: "Tokyo Ghoul",
+    aliases: ["Tsukiyama", "The Gourmet", "Shuu Tsukiyama"],
+    tier: "hard",
+    descriptions: [
+      "An impossibly elegant ghoul obsessed with fine cuisine who becomes fascinated — dangerously so — with the half-ghoul protagonist.",
+      "Slicked purple hair with a swept-back fringe, a monocle, ornate clothing, and a flair for the dramatic.",
+      "The flamboyant 'Gourmet' ghoul of the Tokyo Ghoul cast; switches between French, German, and Italian mid-sentence."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "purple-slicked-hair", extras: ["monocle","ornate-suit","dramatic-pose"], palette: ["#6040a0","#1a1a1a","#d0c080"] },
+    bodyPartHints: ["slicked purple-violet hair", "monocle over one eye", "ornate flamboyant clothing"],
+    funFacts: ["Speaks in multiple languages to seem refined", "His Kagune resembles a thorned flower"],
+    wikiUrl: "https://tokyoghoul.fandom.com/wiki/Shuu_Tsukiyama"
+  },
+  {
+    slug: "touka-kirishima",
+    displayName: "Touka Kirishima",
+    series: "Tokyo Ghoul",
+    aliases: ["Touka", "Kirishima Touka", "Rabbit"],
+    tier: "hard",
+    descriptions: [
+      "A ghoul who works at a coffee shop as a waitress, concealing her nature while quietly fighting to survive.",
+      "Dark purple-blue bob haircut, pale skin, her ghoul mask resembles a rabbit.",
+      "The sharp-tongued female lead of the Tokyo Ghoul series; her kagune erupts as a wing from her back."
+    ],
+    sketchHints: { headShape: "teen-feminine", accent: "dark-blue-bob", extras: ["rabbit-mask","wing-kagune","barista-apron"], palette: ["#2a1a4a","#1a1a1a","#e0e0e0"] },
+    bodyPartHints: ["dark purple-blue bob cut", "rabbit-shaped ghoul mask", "single wing kagune"],
+    funFacts: ["Her alias is 'Rabbit'", "Works at Anteiku coffee shop"],
+    wikiUrl: "https://tokyoghoul.fandom.com/wiki/Touka_Kirishima"
+  },
+  {
+    slug: "rize-kamishiro",
+    displayName: "Rize Kamishiro",
+    series: "Tokyo Ghoul",
+    aliases: ["Rize", "Kamishiro Rize", "Binge Eater"],
+    tier: "hard",
+    descriptions: [
+      "A powerful and voracious ghoul whose organs are transplanted into an unsuspecting college student, changing his life forever.",
+      "Long wavy dark hair, glasses, a gentle bookish appearance that hides a savage predator.",
+      "The 'Binge Eater' ghoul who inadvertently creates the series' protagonist — her kagune has multiple tentacles."
+    ],
+    sketchHints: { headShape: "adult-feminine", accent: "long-wavy-dark-hair", extras: ["glasses","tentacle-kagune","rinkaku"], palette: ["#2a1a3a","#c41e3a","#d0c0e0"] },
+    bodyPartHints: ["long wavy dark brown-purple hair", "glasses with a soft expression", "multiple rinkaku tentacle kagune"],
+    funFacts: ["Her organs were transplanted into Kaneki", "Alias: Binge Eater for her excessive feeding"],
+    wikiUrl: "https://tokyoghoul.fandom.com/wiki/Rize_Kamishiro"
+  },
+
+  // ========== GINTAMA ==========
+  {
+    slug: "gintoki-sakata",
+    displayName: "Gintoki Sakata",
+    series: "Gintama",
+    aliases: ["Gintoki", "Gin-san", "White Demon", "Sakata Gintoki"],
+    tier: "medium",
+    descriptions: [
+      "A former samurai reduced to running an odd-jobs business in an Edo-period Japan occupied by aliens; addicted to sweets.",
+      "Wavy natural-perm silver hair, dead fish eyes, a red kimono with a Yorozuya crest, and a wooden sword.",
+      "The shaggy-haired lazy protagonist of one of the longest-running comedy-action anime ever made."
+    ],
+    sketchHints: { headShape: "adult-male-wavy", accent: "silver-natural-perm", extras: ["wooden-sword","red-kimono","yorozuya-crest"], palette: ["#d0d0d0","#c41e3a","#1a1a1a"] },
+    bodyPartHints: ["wavy silver natural-perm hair", "dead fish / unfocused eyes", "red kimono with Yorozuya symbol"],
+    funFacts: ["Runs Yorozuya odd-jobs shop", "Addicted to Strawberry Milk and Jump magazine"],
+    wikiUrl: "https://gintama.fandom.com/wiki/Gintoki_Sakata"
+  },
+  {
+    slug: "kagura-gintama",
+    displayName: "Kagura",
+    series: "Gintama",
+    aliases: ["Kagura", "China girl"],
+    tier: "hard",
+    descriptions: [
+      "A girl of superhuman strength from an alien warrior race who eats ungodly amounts and wields an umbrella as a weapon.",
+      "Red twin braids, a Chinese qipao outfit, and an umbrella that doubles as a sniper rifle and shield.",
+      "The boisterous alien girl member of the Yorozuya trio in the Edo-era alien-occupied comedy series."
+    ],
+    sketchHints: { headShape: "child-feminine", accent: "red-twin-braids", extras: ["umbrella-weapon","chinese-qipao","gorilla-strength"], palette: ["#c41e3a","#ffffff","#1a1a1a"] },
+    bodyPartHints: ["long red hair in twin braids", "white Chinese qipao dress with red trim", "large umbrella"],
+    funFacts: ["Member of the Yato alien clan — superhuman strength", "Umbrella has a gun barrel built in"],
+    wikiUrl: "https://gintama.fandom.com/wiki/Kagura"
+  },
+  {
+    slug: "toshiro-hijikata",
+    displayName: "Toshiro Hijikata",
+    series: "Gintama",
+    aliases: ["Hijikata", "Mayora", "Hijikata Toshiro", "Demonic Vice-Commander"],
+    tier: "hard",
+    descriptions: [
+      "The Demonic Vice-Commander of the Shinsengumi police force — strict, feared, and obsessed with mayonnaise.",
+      "Black spiky hair, piercing dark eyes, blue Shinsengumi haori, always with a cigarette and mayo bottle.",
+      "The intimidating deputy of the alien-era Shinsengumi police in the Gintama comedy series."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "black-spiky-hair", extras: ["blue-haori","mayo-bottle","cigarette"], palette: ["#1a1a2a","#2a4a8a","#e0e0e0"] },
+    bodyPartHints: ["black spiky hair", "blue Shinsengumi haori coat", "cigarette in mouth"],
+    funFacts: ["Nicknamed 'Mayora' for his mayo obsession", "His katana is named Kazanagi"],
+    wikiUrl: "https://gintama.fandom.com/wiki/Toshiro_Hijikata"
+  },
+  {
+    slug: "shinsuke-takasugi",
+    displayName: "Shinsuke Takasugi",
+    series: "Gintama",
+    aliases: ["Takasugi", "Shinsuke Takasugi"],
+    tier: "hard",
+    descriptions: [
+      "A former comrade of the Silver-Haired Samurai who turned to terrorism, seeking to destroy the corrupt world that took their teacher.",
+      "Long straight dark hair, an eyepatch over his left eye, a green kimono, and a pipe he's rarely without.",
+      "The brooding main antagonist of Gintama's serious arcs; wields a thin blade with terrifying precision."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "long-dark-hair", extras: ["left-eyepatch","green-kimono","kiseru-pipe"], palette: ["#1a1a2a","#2a4a2a","#c41e3a"] },
+    bodyPartHints: ["long straight dark hair", "eyepatch over the left eye", "green kimono with a pipe"],
+    funFacts: ["Lost his left eye in the Joui War", "Leads the terrorist group Kiheitai"],
+    wikiUrl: "https://gintama.fandom.com/wiki/Shinsuke_Takasugi"
+  },
+  {
+    slug: "kotaro-katsura",
+    displayName: "Kotaro Katsura",
+    series: "Gintama",
+    aliases: ["Katsura", "Zura", "Katsura Kotaro", "Space Madao"],
+    tier: "hard",
+    descriptions: [
+      "A Joui rebel leader officially wanted by the authorities who constantly insists 'It's not Zura, it's Katsura!' despite everyone calling him Zura.",
+      "Long straight dark hair past the shoulders, a pale complexion, a traditional haori, and his pet duck Elizabeth.",
+      "The idealistic anti-government rebel from the alien-occupied Edo comedy series; travels with a giant white duck."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "long-straight-dark-hair", extras: ["haori","duck-elizabeth","wanted-poster"], palette: ["#1a1a2a","#6a5a3a","#ffffff"] },
+    bodyPartHints: ["long straight black hair flowing down", "traditional haori over a kimono", "accompanied by a giant white duck named Elizabeth"],
+    funFacts: ["His pet is Elizabeth, a giant alien dressed as a duck", "Catchphrase: 'It's not Zura, it's Katsura!'"],
+    wikiUrl: "https://gintama.fandom.com/wiki/Kotaro_Katsura"
+  },
+
+  // ========== BUNGO STRAY DOGS ==========
+  {
+    slug: "osamu-dazai",
+    displayName: "Osamu Dazai",
+    series: "Bungo Stray Dogs",
+    aliases: ["Dazai", "Osamu Dazai"],
+    tier: "medium",
+    descriptions: [
+      "A suicidal genius detective with the ability to nullify any supernatural power on touch; cheerfully plots his next double-suicide.",
+      "Brown hair partially covering one eye, bandages wrapped around his head and arms, a brown belted coat.",
+      "The eccentric bandage-wrapped member of the Armed Detective Agency; named after the real novelist Osamu Dazai."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "brown-hair-over-eye", extras: ["head-bandages","arm-bandages","brown-coat"], palette: ["#8a6030","#d0c080","#1a1a1a"] },
+    bodyPartHints: ["bandages wrapped around his head and one eye", "bandaged arms and hands", "brown trench coat with belt"],
+    funFacts: ["Ability: No Longer Human — nullifies any ability on touch", "Named after Japanese novelist Osamu Dazai"],
+    wikiUrl: "https://bungoustraydogs.fandom.com/wiki/Osamu_Dazai"
+  },
+  {
+    slug: "chuuya-nakahara",
+    displayName: "Chuuya Nakahara",
+    series: "Bungo Stray Dogs",
+    aliases: ["Chuuya", "Nakahara Chuuya", "Slug"],
+    tier: "hard",
+    descriptions: [
+      "A hot-tempered Port Mafia executive who manipulates gravity; his corrupted form is near-invincible but costs him his mind.",
+      "Short orange-red hair under a distinctive wide-brim black hat, compact build, black uniform with a red cravat.",
+      "The gravity-controlling mafia executive from the same supernatural detective series as the bandaged genius."
+    ],
+    sketchHints: { headShape: "adult-male-short", accent: "orange-red-hair", extras: ["wide-brim-black-hat","red-cravat","black-uniform"], palette: ["#c06020","#1a1a1a","#c41e3a"] },
+    bodyPartHints: ["short orange-red hair", "wide-brimmed black hat", "red cravat around the neck"],
+    funFacts: ["Ability: For the Tainted Sorrow — gravity manipulation", "His Corruption form makes him an unstoppable berserker"],
+    wikiUrl: "https://bungoustraydogs.fandom.com/wiki/Chuuya_Nakahara"
+  },
+  {
+    slug: "atsushi-nakajima",
+    displayName: "Atsushi Nakajima",
+    series: "Bungo Stray Dogs",
+    aliases: ["Atsushi", "Nakajima Atsushi"],
+    tier: "hard",
+    descriptions: [
+      "An orphan who discovers he can transform into a white tiger; joins the Armed Detective Agency after being pulled from a river.",
+      "Silver-white hair with grey streaks, timid eyes, a white shirt and striped vest, tiger stripes appearing during transformation.",
+      "The naive but kind protagonist of the supernatural detective series; named after the real short-story writer Atsushi Nakajima."
+    ],
+    sketchHints: { headShape: "teen-male", accent: "silver-white-grey-hair", extras: ["striped-vest","tiger-arm","wide-scared-eyes"], palette: ["#d0d0d0","#d0b060","#1a1a1a"] },
+    bodyPartHints: ["silver-white hair with grey streaks", "striped white and grey vest", "one arm can transform into a white tiger's"],
+    funFacts: ["Ability: Beast Beneath the Moonlight — white tiger transformation", "Grew up in an abusive orphanage"],
+    wikiUrl: "https://bungoustraydogs.fandom.com/wiki/Atsushi_Nakajima"
+  },
+  {
+    slug: "ryunosuke-akutagawa",
+    displayName: "Ryunosuke Akutagawa",
+    series: "Bungo Stray Dogs",
+    aliases: ["Akutagawa", "Ryunosuke Akutagawa"],
+    tier: "hard",
+    descriptions: [
+      "A ruthless Port Mafia assassin who idolizes his former trainer and views weakness as unforgivable; perpetually coughing.",
+      "Pale sickly skin, dark unkempt hair, a long black coat that merges with his ability — a shadowy beast.",
+      "The brooding dark-coat assassin of the Bungo Stray Dogs cast; named after novelist Ryunosuke Akutagawa."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "dark-unkempt-hair", extras: ["black-coat-rashoumon","pale-skin","coughing"], palette: ["#1a1a1a","#2a2a3a","#a0a0b0"] },
+    bodyPartHints: ["dark unkempt hair", "long black coat that shifts into shadow tendrils", "pale sickly complexion"],
+    funFacts: ["Ability: Rashoumon — a shadowy beast that can devour anything", "Chronic illness makes him cough frequently"],
+    wikiUrl: "https://bungoustraydogs.fandom.com/wiki/Ryunosuke_Akutagawa"
+  },
+
+  // ========== MOB PSYCHO 100 ==========
+  {
+    slug: "shigeo-kageyama",
+    displayName: "Shigeo Kageyama",
+    series: "Mob Psycho 100",
+    aliases: ["Mob", "Shigeo Kageyama", "???%"],
+    tier: "medium",
+    descriptions: [
+      "A boy of immense psychic power who suppresses his emotions to keep himself under control — his power explodes when he hits 100%.",
+      "Completely unremarkable appearance: black bowl cut, blank expression, simple school uniform.",
+      "The deceptively ordinary-looking protagonist of an psychic comedy; his power meter ticks toward disaster."
+    ],
+    sketchHints: { headShape: "teen-male-bowl-cut", accent: "black-bowl-cut", extras: ["school-uniform","psychic-aura","blank-face"], palette: ["#1a1a1a","#2a4a8a","#c41e3a"] },
+    bodyPartHints: ["plain black bowl-cut hair", "blank expressionless face", "plain school uniform"],
+    funFacts: ["'Mob' means background character in Japanese slang", "His power gauge reaches ???% in extreme moments"],
+    wikiUrl: "https://mobpsycho100.fandom.com/wiki/Shigeo_Kageyama"
+  },
+  {
+    slug: "reigen-arataka",
+    displayName: "Reigen Arataka",
+    series: "Mob Psycho 100",
+    aliases: ["Reigen", "Arataka Reigen", "The Greatest Psychic of the 21st Century"],
+    tier: "medium",
+    descriptions: [
+      "A con artist who runs a spirit-consultation business with zero psychic ability — except for suspiciously good results thanks to his powerful employee.",
+      "Slicked black hair, a trim suit, a confident salesman smile, and an inexhaustible supply of made-up psychic techniques.",
+      "The charismatic fraud mentor from the psychic comedy series; his 'Salt Splash' attack somehow works on demons."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "slicked-black-hair", extras: ["business-suit","salt-bottle","confident-grin"], palette: ["#1a1a1a","#2a3a6a","#c0c0c0"] },
+    bodyPartHints: ["slicked neat black hair", "business suit with a tie", "signature confident salesman grin"],
+    funFacts: ["Has zero psychic ability but convinced everyone otherwise", "Invented techniques: Salt Splash, Cologne Spray, Ordinary Punch"],
+    wikiUrl: "https://mobpsycho100.fandom.com/wiki/Arataka_Reigen"
+  },
+
+  // ========== HAIKYUU!! ==========
+  {
+    slug: "shoyo-hinata",
+    displayName: "Shoyo Hinata",
+    series: "Haikyuu!!",
+    aliases: ["Hinata", "Shoyo Hinata", "The Little Giant"],
+    tier: "medium",
+    descriptions: [
+      "A short volleyball player with extraordinary jumping ability who dreams of becoming a great spiker despite his height.",
+      "Spiky orange hair, a perpetual wide grin, Karasuno High black and orange volleyball uniform.",
+      "The energetic tiny protagonist of a beloved volleyball sports anime; number 10 for the Karasuno crows."
+    ],
+    sketchHints: { headShape: "teen-male-spiky", accent: "orange-spiky-hair", extras: ["karasuno-uniform","wide-grin","short-stature"], palette: ["#e06020","#1a1a1a","#ffffff"] },
+    bodyPartHints: ["spiky orange hair", "Karasuno black #10 volleyball jersey", "short stature with a huge grin"],
+    funFacts: ["Jersey number: 10", "Nicknamed 'Chibi-chan' (shorty) by rivals"],
+    wikiUrl: "https://haikyuu.fandom.com/wiki/Shoyo_Hinata"
+  },
+  {
+    slug: "tobio-kageyama",
+    displayName: "Tobio Kageyama",
+    series: "Haikyuu!!",
+    aliases: ["Kageyama", "King of the Court", "Tobio Kageyama"],
+    tier: "medium",
+    descriptions: [
+      "A genius volleyball setter with an imperious attitude who must learn to work as a teammate rather than a dictator.",
+      "Dark blue-black short hair, sharp cold eyes, Karasuno jersey number 9, permanent scowl.",
+      "The prodigious setter partner of the orange-haired spiker in the volleyball anime; once called 'King of the Court'."
+    ],
+    sketchHints: { headShape: "teen-male", accent: "dark-blue-short-hair", extras: ["karasuno-uniform","setter-hand-position","cold-stare"], palette: ["#1a1a3a","#1a1a1a","#ffffff"] },
+    bodyPartHints: ["dark navy-blue short hair", "Karasuno #9 volleyball jersey", "cold intense stare"],
+    funFacts: ["Nicknamed 'King of the Court' — originally an insult", "Setter for Karasuno #9"],
+    wikiUrl: "https://haikyuu.fandom.com/wiki/Tobio_Kageyama"
+  },
+  {
+    slug: "kei-tsukishima",
+    displayName: "Kei Tsukishima",
+    series: "Haikyuu!!",
+    aliases: ["Tsukishima", "Tsukki", "Kei Tsukishima"],
+    tier: "hard",
+    descriptions: [
+      "A tall, sarcastic middle blocker who hides behind cynicism and refuses to care — until one match changes his mind.",
+      "Blond short hair, rectangular glasses, a perpetual smug smirk, extremely tall, Karasuno jersey number 11.",
+      "The glasses-wearing tall blond blocker from the Karasuno volleyball team; delivers cutting remarks effortlessly."
+    ],
+    sketchHints: { headShape: "teen-male-tall", accent: "blond-short-hair", extras: ["rectangular-glasses","smug-smirk","tall-blocker"], palette: ["#d0b040","#1a1a1a","#ffffff"] },
+    bodyPartHints: ["blond short hair", "rectangular framed glasses", "tall lanky build with Karasuno #11 jersey"],
+    funFacts: ["Tallest on the Karasuno team at 188 cm", "His signature is the 'guess block' read blocking technique"],
+    wikiUrl: "https://haikyuu.fandom.com/wiki/Kei_Tsukishima"
+  },
+
+  // ========== SPY x FAMILY ==========
+  {
+    slug: "loid-forger",
+    displayName: "Loid Forger",
+    series: "Spy x Family",
+    aliases: ["Loid", "Twilight", "Loid Forger"],
+    tier: "medium",
+    descriptions: [
+      "A master spy who adopts a child and fake-marries an assassin to maintain his cover for a mission.",
+      "Platinum blond hair, sharp green eyes, a well-pressed suit — the picture of a perfect psychiatrist father.",
+      "The suave undercover agent protagonist of a comedy spy series who can't let his fake family know he's a spy."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "platinum-blond-hair", extras: ["green-eyes","business-suit","spy-gadgets"], palette: ["#e0e0c0","#2a4a2a","#1a1a1a"] },
+    bodyPartHints: ["platinum blond side-parted hair", "sharp green eyes", "neat professional suit"],
+    funFacts: ["Codename: Twilight", "Works for WISE intelligence agency"],
+    wikiUrl: "https://spy-x-family.fandom.com/wiki/Loid_Forger"
+  },
+  {
+    slug: "yor-forger",
+    displayName: "Yor Forger",
+    series: "Spy x Family",
+    aliases: ["Yor", "Thorn Princess", "Yor Briar", "Yor Forger"],
+    tier: "medium",
+    descriptions: [
+      "A government clerk who moonlights as an elite assassin; fake-marries a spy without knowing he's a spy.",
+      "Black bob haircut, vivid red eyes, pale skin, wears a striking red rose-shaped hair accessory, carries throwing needles.",
+      "The deadly but socially awkward 'Thorn Princess' assassin from the spy-comedy family series."
+    ],
+    sketchHints: { headShape: "adult-feminine", accent: "black-bob-hair", extras: ["red-rose-hairpin","red-eyes","needles-weapon"], palette: ["#1a1a1a","#c41e3a","#e0e0e0"] },
+    bodyPartHints: ["black bob hair", "vivid red eyes", "red rose hair accessory"],
+    funFacts: ["Codename: Thorn Princess", "Can kick with enough force to launch a person into orbit (almost)"],
+    wikiUrl: "https://spy-x-family.fandom.com/wiki/Yor_Forger"
+  },
+  {
+    slug: "anya-forger",
+    displayName: "Anya Forger",
+    series: "Spy x Family",
+    aliases: ["Anya", "Anya Forger"],
+    tier: "easy",
+    descriptions: [
+      "A little girl secretly able to read minds, unaware that her new fake-family is a spy and an assassin.",
+      "Short pink hair with two small side-bun-like sections, large green eyes, and the most expressive face in anime.",
+      "The telepathic toddler of the spy-comedy family series; her reaction faces launched a thousand memes."
+    ],
+    sketchHints: { headShape: "child-feminine", accent: "pink-hair-side-buns", extras: ["green-eyes","expressive-faces","school-uniform"], palette: ["#e080a0","#2a6a2a","#ffffff"] },
+    bodyPartHints: ["short pink hair with small side bunches", "big expressive green eyes", "Eden Academy school uniform"],
+    funFacts: ["Can read minds — she knows her dad is a spy", "Her meme faces are widely popular on the internet"],
+    wikiUrl: "https://spy-x-family.fandom.com/wiki/Anya_Forger"
+  },
+
+  // ========== JOJO'S BIZARRE ADVENTURE ==========
+  {
+    slug: "jotaro-kujo",
+    displayName: "Jotaro Kujo",
+    series: "JoJo's Bizarre Adventure",
+    aliases: ["Jotaro", "JoJo", "Jotaro Kujo"],
+    tier: "easy",
+    descriptions: [
+      "A delinquent with a Stand that stops time who travels to Egypt to defeat an immortal vampire threatening his family.",
+      "Dark hair under a flat-brim black hat with an anchor emblem, a long dark school coat, Star Platinum stand.",
+      "The iconic 'Yare yare daze' protagonist of JoJo's Part 3; his Stand is among the most powerful in the series."
+    ],
+    sketchHints: { headShape: "adult-male-tall", accent: "dark-hair-black-hat", extras: ["flat-brim-cap","anchor-emblem","long-school-coat"], palette: ["#1a1a1a","#2a2a4a","#d0d0d0"] },
+    bodyPartHints: ["flat-brimmed black hat with anchor symbol", "long dark school uniform coat", "stern unimpressed expression"],
+    funFacts: ["Stand: Star Platinum — 'ORA ORA ORA!'", "Catchphrase: 'Yare yare daze' (Good grief)"],
+    wikiUrl: "https://jojo.fandom.com/wiki/Jotaro_Kujo"
+  },
+  {
+    slug: "giorno-giovanna",
+    displayName: "Giorno Giovanna",
+    series: "JoJo's Bizarre Adventure",
+    aliases: ["Giorno", "GioGio", "Haruno Shiobana", "Giorno Giovanna"],
+    tier: "medium",
+    descriptions: [
+      "The son of an immortal vampire who joins the Italian mafia to become a Gang Star and reform it from within.",
+      "Golden hair styled in three spherical buns at the front, a green suit covered in ladybug brooches.",
+      "The gold-suit ladybug-covered protagonist of JoJo's Part 5; his Stand turns life into more life."
+    ],
+    sketchHints: { headShape: "teen-male", accent: "golden-hair-bun-rolls", extras: ["ladybug-brooches","green-gold-suit","Gold-Experience"], palette: ["#d0b020","#2a6a2a","#c41e3a"] },
+    bodyPartHints: ["golden hair formed into three ball-shaped rolls at the front", "suit covered with ladybug motif brooches", "ladybug-shaped lapel pins"],
+    funFacts: ["Stand: Gold Experience Requiem — negates cause and effect", "Son of DIO"],
+    wikiUrl: "https://jojo.fandom.com/wiki/Giorno_Giovanna"
+  },
+  {
+    slug: "joseph-joestar",
+    displayName: "Joseph Joestar",
+    series: "JoJo's Bizarre Adventure",
+    aliases: ["Joseph", "JoJo", "Joseph Joestar"],
+    tier: "medium",
+    descriptions: [
+      "A wisecracking American-British fighter who uses Hamon energy and always seems to know what his enemy is about to say — because he tells them.",
+      "Brown wavy hair, a striped headband, suspenders over a muscle shirt, a prosthetic hand in older appearances.",
+      "The loud comedic protagonist of JoJo's Part 2; hero in Part 3 — famous for 'Your next line is...' predictions."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "brown-wavy-hair", extras: ["striped-headband","suspenders","clacker-weapon"], palette: ["#8a5020","#1a1a1a","#d0c080"] },
+    bodyPartHints: ["wavy brown hair with a striped headband", "suspenders over a casual muscle shirt", "finger rings and clackers"],
+    funFacts: ["Hamon user — Ripple Energy", "Catchphrase: 'Your next line is...' (and he's always right)"],
+    wikiUrl: "https://jojo.fandom.com/wiki/Joseph_Joestar"
+  },
+
+  // ========== FATE SERIES ==========
+  {
+    slug: "saber",
+    displayName: "Saber",
+    series: "Fate/stay night",
+    aliases: ["Saber", "Artoria", "Artoria Pendragon", "Arturia", "King Arthur", "Altria"],
+    tier: "medium",
+    descriptions: [
+      "The legendary King of Britain summoned as a Servant; wields an invisible holy sword and fights with regal precision.",
+      "Blond hair tied back in a braid, green eyes, armored blue dress with silver plate armor gauntlets.",
+      "The iconic 'Saber' class Servant from the Fate franchise; the most recognizable face of the series."
+    ],
+    sketchHints: { headShape: "adult-feminine", accent: "blond-braid-updo", extras: ["blue-armor","excalibur-invisible","green-eyes"], palette: ["#d0b040","#2a4a8a","#e0e0e0"] },
+    bodyPartHints: ["blonde hair tied in a neat braid bun", "blue armored battle dress", "invisible sword held in gauntleted hand"],
+    funFacts: ["Her sword Excalibur is cloaked in wind", "Class: Saber — most renowned of all Servant classes"],
+    wikiUrl: "https://typemoon.fandom.com/wiki/Saber"
+  },
+  {
+    slug: "gilgamesh-fate",
+    displayName: "Gilgamesh",
+    series: "Fate/stay night",
+    aliases: ["Gilgamesh", "Gil", "King of Heroes", "Archer (Fate/Zero)"],
+    tier: "hard",
+    descriptions: [
+      "The arrogant king of ancient Mesopotamia who considers all treasures in existence his by right — because he created them all.",
+      "Spiky golden hair, red-slitted eyes, gleaming golden armor, summoning portals that launch legendary weapons.",
+      "The overbearing golden King of Heroes from the Fate series; his Noble Phantasm is every treasure ever made."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "spiky-golden-hair", extras: ["golden-armor","gate-of-babylon-portals","red-slit-eyes"], palette: ["#d0b020","#c08020","#8a1a1a"] },
+    bodyPartHints: ["spiky golden hair", "gleaming gold plate armor", "red slit-pupil eyes"],
+    funFacts: ["Gate of Babylon fires every Noble Phantasm in history", "Based on the Epic of Gilgamesh — oldest known literature"],
+    wikiUrl: "https://typemoon.fandom.com/wiki/Gilgamesh"
+  },
+  {
+    slug: "rin-tohsaka",
+    displayName: "Rin Tohsaka",
+    series: "Fate/stay night",
+    aliases: ["Rin", "Tohsaka Rin", "Rin Tohsaka"],
+    tier: "hard",
+    descriptions: [
+      "A disciplined mage from one of the three founding families of the Holy Grail War; maintains a perfect reputation at school.",
+      "Black twin-tails tied with red ribbons, blue-green eyes, a red turtleneck sweater, a jewel pendant she uses for magic.",
+      "The dual-pigtailed tsundere mage of the Fate franchise; her elemental jewels are her main weapon."
+    ],
+    sketchHints: { headShape: "teen-feminine", accent: "black-twin-tails-red-ribbons", extras: ["red-turtleneck","jewel-pendant","mage-outfit"], palette: ["#1a1a1a","#c41e3a","#4a80c0"] },
+    bodyPartHints: ["black twin-tails tied with red ribbons", "red turtleneck sweater", "glowing jewel pendant"],
+    funFacts: ["Mage family with two magical crests", "Her Servant is Archer/EMIYA"],
+    wikiUrl: "https://typemoon.fandom.com/wiki/Rin_Tohsaka"
+  },
+  {
+    slug: "archer-emiya",
+    displayName: "Archer",
+    series: "Fate/stay night",
+    aliases: ["Archer", "EMIYA", "Counter Guardian", "Heroic Spirit EMIYA"],
+    tier: "hard",
+    descriptions: [
+      "A Counter Guardian Servant with silver-white hair who projects any weapon he has ever seen — and who shares an unsettling connection with the protagonist.",
+      "Tan skin, white-silver hair swept back, red-black bodysuit, dual blades Kanshou and Bakuya.",
+      "The sardonic red-coated Servant from Fate/stay night whose true identity is a major plot twist."
+    ],
+    sketchHints: { headShape: "adult-male", accent: "white-silver-swept-hair", extras: ["red-black-bodysuit","dual-blades","tan-skin"], palette: ["#d0c0c0","#c41e3a","#1a1a1a"] },
+    bodyPartHints: ["white-silver hair swept back", "tan dark skin", "red coat over black bodysuit with twin curved blades"],
+    funFacts: ["Projects weapons using Unlimited Blade Works", "His identity is the series' biggest spoiler"],
+    wikiUrl: "https://typemoon.fandom.com/wiki/EMIYA"
+  },
+
+  // ========== RE:ZERO ==========
+  {
+    slug: "subaru-natsuki",
+    displayName: "Subaru Natsuki",
+    series: "Re:Zero",
+    aliases: ["Subaru", "Natsuki Subaru", "Natsuki-kun"],
+    tier: "medium",
+    descriptions: [
+      "A regular Japanese teenager isekai'd into a fantasy world with a hidden power — he returns to a checkpoint every time he dies.",
+      "Black hair, dark eyes, a distinctive black-and-white tracksuit jacket with a red emblem.",
+      "The suffering protagonist of a dark isekai series who dies repeatedly and resets; his power is called Return by Death."
+    ],
+    sketchHints: { headShape: "teen-male", accent: "black-hair", extras: ["track-jacket","red-emblem","bruised-face"], palette: ["#1a1a1a","#c41e3a","#ffffff"] },
+    bodyPartHints: ["black hair", "black-and-white tracksuit jacket with a red crest", "frequently injured appearance"],
+    funFacts: ["Ability: Return by Death — loops back after dying", "Cannot tell anyone about his power or he gets punished"],
+    wikiUrl: "https://rezero.fandom.com/wiki/Natsuki_Subaru"
+  },
+  {
+    slug: "rem-rezero",
+    displayName: "Rem",
+    series: "Re:Zero",
+    aliases: ["Rem", "Oni Maid"],
+    tier: "medium",
+    descriptions: [
+      "A devoted demon maid who falls deeply in love with the protagonist after he saves her from her own demons.",
+      "Short blue bob haircut, a white maid uniform, one blue oni horn hidden under her bangs, a morningstar flail.",
+      "The beloved blue-haired maid from the dark isekai series; often cited as the original 'best girl' of anime wars."
+    ],
+    sketchHints: { headShape: "adult-feminine", accent: "blue-bob-hair", extras: ["maid-uniform","oni-horn","morningstar-flail"], palette: ["#2a6a8a","#ffffff","#1a1a1a"] },
+    bodyPartHints: ["short light-blue bob haircut", "white maid uniform with blue accents", "one oni horn under hair"],
+    funFacts: ["One of two twin demon maids (sister Ram has pink hair)", "Sparked years of waifu debates — 'Rem vs Emilia'"],
+    wikiUrl: "https://rezero.fandom.com/wiki/Rem"
+  },
+  {
+    slug: "emilia-rezero",
+    displayName: "Emilia",
+    series: "Re:Zero",
+    aliases: ["Emilia", "Emilia-tan"],
+    tier: "hard",
+    descriptions: [
+      "A half-elf spirit mage and royal candidate who is feared by many due to her resemblance to a legendary witch.",
+      "Long silver-white hair with a large purple flower ornament, amethyst eyes, a white-and-purple robe.",
+      "The main heroine of the dark isekai loop series; her resemblance to the Witch of Envy makes her a target."
+    ],
+    sketchHints: { headShape: "adult-feminine-elfin", accent: "silver-white-long-hair", extras: ["purple-flower-ornament","purple-eyes","spirit-magic"], palette: ["#d0d0e8","#6040a0","#ffffff"] },
+    bodyPartHints: ["long silver-white hair", "purple flower hair ornament", "violet-purple eyes with elf-like features"],
+    funFacts: ["Half-elf — pointed ears", "Resemblance to Satella (Witch of Envy) causes widespread fear"],
+    wikiUrl: "https://rezero.fandom.com/wiki/Emilia"
+  },
 ];
