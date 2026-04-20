@@ -3,9 +3,9 @@ import { getDb, diffRank, PlayerScoreRow } from "@/lib/db";
 
 export async function GET() {
   try {
-    const db = getDb();
+    const db = await getDb();
 
-    const rows = db.prepare(`
+    const result = await db.execute(`
       WITH totals AS (
         SELECT
           u.id           AS user_id,
@@ -22,9 +22,9 @@ export async function GET() {
       )
       SELECT * FROM ranked WHERE rank <= 10
       ORDER BY rank, username
-    `).all();
+    `);
 
-    return NextResponse.json(rows);
+    return NextResponse.json(result.rows);
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: "Failed to fetch scores" }, { status: 500 });
@@ -40,39 +40,42 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
     }
 
-    const db = getDb();
+    const db = await getDb();
     const dr = diffRank(difficulty);
 
-    // Upsert: only overwrite if new run is strictly better (higher difficulty, or same diff + higher score)
-    db.prepare(`
-      INSERT INTO player_scores (user_id, clue_mode, difficulty, diff_rank, score, streak)
-      VALUES (?, ?, ?, ?, ?, ?)
-      ON CONFLICT(user_id, clue_mode) DO UPDATE SET
-        difficulty = CASE WHEN excluded.diff_rank > diff_rank THEN excluded.difficulty ELSE difficulty END,
-        diff_rank  = CASE WHEN excluded.diff_rank > diff_rank THEN excluded.diff_rank  ELSE diff_rank  END,
-        score = CASE
-                  WHEN excluded.diff_rank > diff_rank THEN excluded.score
-                  WHEN excluded.diff_rank = diff_rank AND excluded.score > score THEN excluded.score
-                  ELSE score
-                END,
-        streak = CASE
-                   WHEN excluded.diff_rank > diff_rank THEN excluded.streak
-                   WHEN excluded.diff_rank = diff_rank AND excluded.score > score THEN excluded.streak
-                   ELSE streak
-                 END,
-        updated_at = CASE
-                       WHEN excluded.diff_rank > diff_rank
-                            OR (excluded.diff_rank = diff_rank AND excluded.score > score)
-                         THEN datetime('now')
-                       ELSE updated_at
-                     END
-    `).run(user_id, clue_mode, difficulty, dr, score, streak ?? 0);
+    await db.execute({
+      sql: `
+        INSERT INTO player_scores (user_id, clue_mode, difficulty, diff_rank, score, streak)
+        VALUES (?, ?, ?, ?, ?, ?)
+        ON CONFLICT(user_id, clue_mode) DO UPDATE SET
+          difficulty = CASE WHEN excluded.diff_rank > diff_rank THEN excluded.difficulty ELSE difficulty END,
+          diff_rank  = CASE WHEN excluded.diff_rank > diff_rank THEN excluded.diff_rank  ELSE diff_rank  END,
+          score = CASE
+                    WHEN excluded.diff_rank > diff_rank THEN excluded.score
+                    WHEN excluded.diff_rank = diff_rank AND excluded.score > score THEN excluded.score
+                    ELSE score
+                  END,
+          streak = CASE
+                     WHEN excluded.diff_rank > diff_rank THEN excluded.streak
+                     WHEN excluded.diff_rank = diff_rank AND excluded.score > score THEN excluded.streak
+                     ELSE streak
+                   END,
+          updated_at = CASE
+                         WHEN excluded.diff_rank > diff_rank
+                              OR (excluded.diff_rank = diff_rank AND excluded.score > score)
+                           THEN datetime('now')
+                         ELSE updated_at
+                       END
+      `,
+      args: [user_id, clue_mode, difficulty, dr, score, streak ?? 0],
+    });
 
-    const row = db
-      .prepare("SELECT * FROM player_scores WHERE user_id = ? AND clue_mode = ?")
-      .get(user_id, clue_mode) as PlayerScoreRow;
+    const rowResult = await db.execute({
+      sql: "SELECT * FROM player_scores WHERE user_id = ? AND clue_mode = ?",
+      args: [user_id, clue_mode],
+    });
 
-    return NextResponse.json(row);
+    return NextResponse.json(rowResult.rows[0] as unknown as PlayerScoreRow);
   } catch (err) {
     console.error(err);
     return NextResponse.json({ error: "Failed to save score" }, { status: 500 });

@@ -1,9 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDb, UserRow } from "@/lib/db";
 
-// POST /api/users  { username }
-// → creates user if new, returns { id, username, created }
-// → if already exists returns the same shape with created: false
 export async function POST(req: NextRequest) {
   try {
     const { username } = await req.json();
@@ -19,20 +16,26 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const db = getDb();
+    const db = await getDb();
 
-    // Try insert
     try {
-      const info = db
-        .prepare("INSERT INTO users (username) VALUES (?)")
-        .run(clean);
-      return NextResponse.json({ id: info.lastInsertRowid, username: clean, created: true });
+      const result = await db.execute({
+        sql: "INSERT INTO users (username) VALUES (?)",
+        args: [clean],
+      });
+      return NextResponse.json({
+        id: Number(result.lastInsertRowid),
+        username: clean,
+        created: true,
+      });
     } catch {
-      // UNIQUE constraint → user exists, just return it
-      const row = db
-        .prepare("SELECT * FROM users WHERE username = ? COLLATE NOCASE")
-        .get(clean) as UserRow;
-      if (!row) throw new Error("unexpected");
+      // UNIQUE constraint → user already exists
+      const result = await db.execute({
+        sql: "SELECT * FROM users WHERE username = ?",
+        args: [clean],
+      });
+      const row = result.rows[0] as unknown as UserRow;
+      if (!row) throw new Error("unexpected missing user");
       return NextResponse.json({ id: row.id, username: row.username, created: false });
     }
   } catch (err) {
