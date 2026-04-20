@@ -26,8 +26,8 @@ export async function GET() {
 
     return NextResponse.json(result.rows);
   } catch (err) {
-    console.error(err);
-    return NextResponse.json({ error: "Failed to fetch scores" }, { status: 500 });
+    console.error("GET /api/scores error:", err);
+    return NextResponse.json({ error: "Failed to fetch scores", detail: String(err) }, { status: 500 });
   }
 }
 
@@ -77,7 +77,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json(rowResult.rows[0] as unknown as PlayerScoreRow);
   } catch (err) {
-    console.error(err);
-    return NextResponse.json({ error: "Failed to save score" }, { status: 500 });
+    console.error("POST /api/scores error:", err);
+    return NextResponse.json({ error: "Failed to save score", detail: String(err) }, { status: 500 });
   }
 }
