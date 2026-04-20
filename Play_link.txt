@@ -1,1 +1,1 @@
-https://guessthecharacters-5dzqlz4tg-kamui28is-projects.vercel.app/
+https://guessthecharacters.vercel.app/game
