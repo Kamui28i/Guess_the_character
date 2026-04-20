@@ -2,10 +2,10 @@
   "name": "guess-the-culprit",
   "version": "1.0.0",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "24.x"
   },
   "scripts": {
-    "build": "npm --prefix guess-the-culprit install && npm --prefix guess-the-culprit run build",
+    "build": "npm --prefix guess-the-culprit install --include=dev && npm --prefix guess-the-culprit run build",
     "start": "npm --prefix guess-the-culprit start"
   }
 }
