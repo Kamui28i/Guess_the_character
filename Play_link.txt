@@ -1,1 +1,1 @@
-https://guess-the-character-2441c2ff0e74.herokuapp.com/
+https://guessthecharacters-5dzqlz4tg-kamui28is-projects.vercel.app/
